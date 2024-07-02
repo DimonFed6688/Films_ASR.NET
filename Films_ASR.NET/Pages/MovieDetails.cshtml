@@ -1,0 +1,11 @@
+﻿@page
+@model Films_ASR.NET.Pages.MovieDetailsModel
+@{
+    ViewData["Title"] = "Информация о фильме";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Название: @Model.Movie.Title</p>
+<p>Режиссер: @Model.Movie.Director</p>
+<p>Год: @Model.Movie.Year</p>
+<p>Описание: @Model.Movie.Description</p>

@@ -1,0 +1,15 @@
+﻿@page
+@model Films_ASR.NET.Pages.MovieListModel
+
+@{
+    ViewData["Title"] = "Список фильмов";
+    // var movies = Model.Movies;
+}
+<h1>@ViewData["Title"]</h1>
+
+<ul>
+    @foreach (var movie in Model.Movies)
+    {
+        <li><a href="/MovieDetails?id=@Model.Movies.IndexOf(movie)">@movie.Title</a></li>
+    }
+</ul>
